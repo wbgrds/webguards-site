@@ -42,6 +42,12 @@
             letter-spacing: -0.5px;
         }
 
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
         .hamburger {
             display: none;
             flex-direction: column;
@@ -271,17 +277,19 @@
 <body>
     <header>
         <div class="header-content">
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
             <div class="logo">WEBGUARDS</div>
-            <nav id="nav-desktop">
-                <a href="#services">Services</a>
-                <a href="#about">Über uns</a>
-                <a href="#contact">Kontakt</a>
-            </nav>
+            <div class="header-right">
+                <nav id="nav-desktop">
+                    <a href="#services">Services</a>
+                    <a href="#about">Über uns</a>
+                    <a href="#contact">Kontakt</a>
+                </nav>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
         </div>
         <nav class="mobile-nav" id="mobile-nav">
             <a href="#services">Services</a>
@@ -363,7 +371,6 @@
             mobileNav.classList.toggle('active');
         });
 
-        // Menü schließen wenn auf Link geklickt wird
         document.querySelectorAll('.mobile-nav a').forEach(link => {
             link.addEventListener('click', () => {
                 hamburger.classList.remove('active');
