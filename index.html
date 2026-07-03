@@ -124,23 +124,24 @@
         }
 
         .hero-content {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
         }
 
         .hero h1 {
             font-size: 3.5rem;
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
             font-weight: 700;
             line-height: 1.2;
             color: #4db8ff;
         }
 
         .hero p {
-            font-size: 1.25rem;
+            font-size: 1.1rem;
             opacity: 0.95;
             margin-bottom: 2rem;
             color: #a0d0ff;
+            line-height: 1.8;
         }
 
         .cta-button {
@@ -197,7 +198,7 @@
         }
 
         .service-card h3 {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             margin-bottom: 1rem;
             color: #4db8ff;
         }
@@ -205,6 +206,7 @@
         .service-card p {
             color: #a0d0ff;
             font-size: 0.95rem;
+            line-height: 1.7;
         }
 
         .about-section {
@@ -212,6 +214,17 @@
             border-radius: 8px;
             padding: 3rem;
             border: 1px solid #4db8ff;
+        }
+
+        .about-section h3 {
+            color: #4db8ff;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .about-section h3:first-child {
+            margin-top: 0;
         }
 
         .about-section p {
@@ -245,6 +258,10 @@
         @media (max-width: 768px) {
             .hero h1 {
                 font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
             }
 
             h2 {
@@ -291,9 +308,11 @@
 
     <section class="hero">
         <div class="hero-content">
-            <h1>IT Services & Automation</h1>
-            <p>Pragmatische Lösungen für dein Business. Von Android-Apps über PHP-Systeme bis zur vollständigen Unternehmensautomation.</p>
-            <a href="#services" class="cta-button">Mehr erfahren</a>
+            <h1>Technik als verlässliches Werkzeug</h1>
+            <p>Viele Unternehmen arbeiten mit gewachsenen Abläufen, doppelter Kommunikation und manuellen Zwischenschritten. Informationen liegen verstreut, Aufgaben werden mehrfach bearbeitet, Entscheidungen verzögern sich.</p>
+            <p><strong>Das bindet Zeit, erzeugt Fehler und belastet den Alltag.</strong></p>
+            <p style="margin-top: 2rem;">Wir automatisieren Abläufe, damit Unternehmen stabil, sicher und nachvollziehbar arbeiten können.</p>
+            <a href="#services" class="cta-button">Unsere Leistungen</a>
         </div>
     </section>
 
@@ -302,28 +321,20 @@
             <h2>Was wir machen</h2>
             <div class="services-grid">
                 <div class="service-card">
-                    <h3>Android-Entwicklung</h3>
-                    <p>Native Android Apps mit Kotlin und Jetpack Compose. Maßgeschneidert für deine Anforderungen.</p>
+                    <h3>Prozessoptimierung</h3>
+                    <p>Analyse bestehender Abläufe, Beseitigung von Reibungsverlusten, Aufbau klarer und nachvollziehbarer Prozessstrukturen.</p>
                 </div>
                 <div class="service-card">
-                    <h3>Web-Systeme</h3>
-                    <p>PHP-basierte Webanwendungen, APIs und Content Management. Stabil und skalierbar.</p>
+                    <h3>Digitale Automatisierung</h3>
+                    <p>Einführung digitaler Workflows, Automatisierung wiederkehrender Tätigkeiten, Reduktion manueller Arbeit und Fehlerquellen.</p>
                 </div>
                 <div class="service-card">
-                    <h3>Automatisierung</h3>
-                    <p>n8n-basierte Workflows zur Entlastung deiner Prozesse. Integration von Tools und Services.</p>
+                    <h3>KI-Integration</h3>
+                    <p>Praxisorientierte KI zur Entlastung in Kommunikation, Auswertung und Dokumentation – kontrolliert und nachvollziehbar.</p>
                 </div>
                 <div class="service-card">
-                    <h3>GitHub & DevOps</h3>
-                    <p>Versionskontrolle, CI/CD-Pipelines und Infrastructure as Code. Professionelle Entwicklung.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Interne Tooling</h3>
-                    <p>Custom Tools und Systeme für dein Unternehmen. Effizient und wartbar.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Consulting</h3>
-                    <p>Pragmatische Beratung für deine Tech-Strategie. Fokus auf Umsetzbarkeit.</p>
+                    <h3>IT-Infrastruktur</h3>
+                    <p>Aufbau stabiler IT-Strukturen, Dokumentation und Betriebsbegleitung mit Fokus auf Verlässlichkeit und Ordnung.</p>
                 </div>
             </div>
         </div>
@@ -333,10 +344,16 @@
         <div class="container">
             <h2>Über WEBGUARDS</h2>
             <div class="about-section">
-                <p>WEBGUARDS UG ist ein IT-Services-Unternehmen mit Sitz in Rostock. Wir arbeiten pragmatisch, fokussiert und zielorientiert.</p>
-                <p>Unsere Subsidiärien Röck UG und HR-Prospect-UG zeigen, dass wir nicht nur beraten, sondern auch umsetzen und unternehmerisch handeln.</p>
-                <p>Wir setzen auf moderne Tech-Stacks (Kotlin, PHP, n8n, Docker, GitHub) und automatisieren, was automatisiert werden kann. KI ist für uns ein Werkzeug, keine Religion.</p>
-                <p><strong>Kontakt:</strong> ob@webguards.de | +49 381 40567001</p>
+                <h3>Das Unternehmen</h3>
+                <p>WEBGUARDS ist ein IT-Unternehmen mit Sitz in Rostock. Seit über 20 Jahren entstehen hier Systeme, die Menschen entlasten und Abläufe stabil machen.</p>
+                <p>Maßgeblich ist nicht, was modern wirkt, sondern was dauerhaft funktioniert.</p>
+
+                <h3>Unsere Philosophie</h3>
+                <p><strong>Keine Experimente. Keine Worthülsen. Nur funktionierende Technik.</strong></p>
+                <p>Wir glauben an Ordnung, Verlässlichkeit und Verantwortung. Digitalisierung soll das Leben vereinfachen – nicht komplizierter machen. Wir bauen Systeme, die Menschen Zeit schenken.</p>
+
+                <h3>Kontakt</h3>
+                <p><strong>Email:</strong> ob@webguards.de<br><strong>Telefon:</strong> +49 381 40567001</p>
             </div>
         </div>
     </section>
