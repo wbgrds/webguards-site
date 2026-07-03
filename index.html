@@ -139,7 +139,7 @@
         .hero p {
             font-size: 1.1rem;
             opacity: 0.95;
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
             color: #a0d0ff;
             line-height: 1.8;
         }
@@ -148,11 +148,12 @@
             display: inline-block;
             background: #4db8ff;
             color: #0d2847;
-            padding: 0.75rem 2rem;
+            padding: 0.85rem 2.5rem;
             border-radius: 6px;
             text-decoration: none;
             font-weight: 600;
             transition: transform 0.2s, box-shadow 0.2s;
+            font-size: 1rem;
         }
 
         .cta-button:hover {
@@ -177,10 +178,56 @@
             color: #4db8ff;
         }
 
+        .problem-section {
+            background: rgba(26, 58, 92, 0.3);
+            border-left: 4px solid #ff6b6b;
+            padding: 3rem;
+            border-radius: 0 8px 8px 0;
+            margin-bottom: 3rem;
+        }
+
+        .problem-section h3 {
+            color: #ff8787;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .problem-section p {
+            color: #a0d0ff;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        .solution-section {
+            background: rgba(77, 184, 255, 0.1);
+            border-left: 4px solid #4db8ff;
+            padding: 3rem;
+            border-radius: 0 8px 8px 0;
+            margin-bottom: 3rem;
+        }
+
+        .solution-section h3 {
+            color: #4db8ff;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .solution-section p {
+            color: #a0d0ff;
+            line-height: 1.8;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+
+        .solution-section strong {
+            color: #fff;
+        }
+
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 2rem;
+            margin-bottom: 2rem;
         }
 
         .service-card {
@@ -209,6 +256,25 @@
             line-height: 1.7;
         }
 
+        .contact-section {
+            background: rgba(77, 184, 255, 0.1);
+            border-radius: 8px;
+            padding: 3rem;
+            border: 1px solid #4db8ff;
+            text-align: center;
+            margin: 4rem 0;
+        }
+
+        .contact-section h2 {
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-section p {
+            color: #a0d0ff;
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+
         .about-section {
             background: rgba(26, 58, 92, 0.4);
             border-radius: 8px;
@@ -231,6 +297,10 @@
             margin-bottom: 1rem;
             color: #a0d0ff;
             line-height: 1.8;
+        }
+
+        .about-section strong {
+            color: #fff;
         }
 
         footer {
@@ -289,8 +359,8 @@
             <div class="header-right">
                 <nav id="nav-desktop">
                     <a href="#services">Services</a>
-                    <a href="#about">Über uns</a>
                     <a href="#contact">Kontakt</a>
+                    <a href="#about">Über uns</a>
                 </nav>
                 <div class="hamburger" id="hamburger">
                     <span></span>
@@ -301,24 +371,38 @@
         </div>
         <nav class="mobile-nav" id="mobile-nav">
             <a href="#services">Services</a>
-            <a href="#about">Über uns</a>
             <a href="#contact">Kontakt</a>
+            <a href="#about">Über uns</a>
         </nav>
     </header>
 
     <section class="hero">
         <div class="hero-content">
             <h1>Technik als verlässliches Werkzeug</h1>
-            <p>Viele Unternehmen arbeiten mit gewachsenen Abläufen, doppelter Kommunikation und manuellen Zwischenschritten. Informationen liegen verstreut, Aufgaben werden mehrfach bearbeitet, Entscheidungen verzögern sich.</p>
-            <p><strong>Das bindet Zeit, erzeugt Fehler und belastet den Alltag.</strong></p>
-            <p style="margin-top: 2rem;">Wir automatisieren Abläufe, damit Unternehmen stabil, sicher und nachvollziehbar arbeiten können.</p>
-            <a href="#services" class="cta-button">Unsere Leistungen</a>
+            <p>Ordnung, Verlässlichkeit und funktionierende Systeme statt Experimente und Worthülsen.</p>
+            <a href="#contact" class="cta-button">Jetzt Kontakt aufnehmen</a>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="problem-section">
+                <h3>Das Problem</h3>
+                <p>Viele Unternehmen arbeiten mit gewachsenen Abläufen, doppelter Kommunikation und manuellen Zwischenschritten. Informationen liegen verstreut, Aufgaben werden mehrfach bearbeitet, Entscheidungen verzögern sich.</p>
+                <p>Das bindet Zeit, erzeugt Fehler und belastet den Alltag.</p>
+            </div>
+
+            <div class="solution-section">
+                <h3>Unserer Ansatz</h3>
+                <p><strong>Wir automatisieren Abläufe, damit Unternehmen stabil, sicher und nachvollziehbar arbeiten können.</strong></p>
+                <p>Seit über 20 Jahren entstehen bei uns Systeme, die Menschen entlasten und Prozesse stabil machen. Maßgeblich ist nicht, was modern wirkt, sondern was dauerhaft funktioniert.</p>
+            </div>
         </div>
     </section>
 
     <section id="services">
         <div class="container">
-            <h2>Was wir machen</h2>
+            <h2>Unsere Leistungen</h2>
             <div class="services-grid">
                 <div class="service-card">
                     <h3>Prozessoptimierung</h3>
@@ -340,25 +424,34 @@
         </div>
     </section>
 
-    <section id="about">
+    <section id="contact">
         <div class="container">
-            <h2>Über WEBGUARDS</h2>
-            <div class="about-section">
-                <h3>Das Unternehmen</h3>
-                <p>WEBGUARDS ist ein IT-Unternehmen mit Sitz in Rostock. Seit über 20 Jahren entstehen hier Systeme, die Menschen entlasten und Abläufe stabil machen.</p>
-                <p>Maßgeblich ist nicht, was modern wirkt, sondern was dauerhaft funktioniert.</p>
-
-                <h3>Unsere Philosophie</h3>
-                <p><strong>Keine Experimente. Keine Worthülsen. Nur funktionierende Technik.</strong></p>
-                <p>Wir glauben an Ordnung, Verlässlichkeit und Verantwortung. Digitalisierung soll das Leben vereinfachen – nicht komplizierter machen. Wir bauen Systeme, die Menschen Zeit schenken.</p>
-
-                <h3>Kontakt</h3>
-                <p><strong>Email:</strong> ob@webguards.de<br><strong>Telefon:</strong> +49 381 40567001</p>
+            <div class="contact-section">
+                <h2>Lass uns reden</h2>
+                <p>Du möchtest Abläufe optimieren und Systeme aufbauen, die funktionieren?</p>
+                <p><strong>ob@webguards.de</strong><br>+49 381 40567001</p>
+                <a href="mailto:ob@webguards.de" class="cta-button">Email schreiben</a>
             </div>
         </div>
     </section>
 
-    <footer id="contact">
+    <section id="about">
+        <div class="container">
+            <h2>Über WEBGUARDS</h2>
+            <div class="about-section">
+                <h3>Wer wir sind</h3>
+                <p>WEBGUARDS ist ein IT-Unternehmen mit Sitz in Rostock. Seit über 20 Jahren entstehen hier Systeme, die Menschen entlasten und Abläufe stabil machen.</p>
+
+                <h3>Was uns antreibt</h3>
+                <p>Wir glauben an Ordnung, Verlässlichkeit und Verantwortung. Digitalisierung soll das Leben vereinfachen – nicht komplizierter machen. Wir bauen Systeme, die Menschen Zeit schenken.</p>
+
+                <h3>Unsere Haltung</h3>
+                <p><strong>Keine Experimente. Keine Worthülsen. Nur funktionierende Technik.</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
         <div class="footer-content">
             <div class="footer-bottom">
                 <p>&copy; 2025 WEBGUARDS UG. Alle Rechte vorbehalten.</p>
