@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBGUARDS UG - IT Services</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: #fafafa;
+        }
+
+        header {
+            background: #fff;
+            padding: 1.5rem 2rem;
+            border-bottom: 1px solid #e0e0e0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #2563eb;
+            letter-spacing: -0.5px;
+        }
+
+        nav a {
+            margin-left: 2rem;
+            text-decoration: none;
+            color: #1a1a1a;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: #2563eb;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 6rem 2rem;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            opacity: 0.95;
+            margin-bottom: 2rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: #667eea;
+            padding: 0.75rem 2rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        section {
+            padding: 4rem 0;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            text-align: center;
+            color: #1a1a1a;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #2563eb;
+        }
+
+        .service-card p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        .about-section {
+            background: white;
+            border-radius: 8px;
+            padding: 3rem;
+            border: 1px solid #e0e0e0;
+        }
+
+        .about-section p {
+            margin-bottom: 1rem;
+            color: #666;
+            line-height: 1.8;
+        }
+
+        footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-links {
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-links a {
+            color: #999;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 0.9rem;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #333;
+            padding-top: 1.5rem;
+            color: #999;
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            nav {
+                display: none;
+            }
+
+            .header-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            h2 {
+                font-size: 1.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">WEBGUARDS</div>
+            <nav>
+                <a href="#services">Services</a>
+                <a href="#about">Über uns</a>
+                <a href="#contact">Kontakt</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>IT Services & Automation</h1>
+            <p>Pragmatische Lösungen für dein Business. Von Android-Apps über PHP-Systeme bis zur vollständigen Unternehmensautomation.</p>
+            <a href="#services" class="cta-button">Mehr erfahren</a>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>Was wir machen</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Android-Entwicklung</h3>
+                    <p>Native Android Apps mit Kotlin und Jetpack Compose. Maßgeschneidert für deine Anforderungen.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Web-Systeme</h3>
+                    <p>PHP-basierte Webanwendungen, APIs und Content Management. Stabil und skalierbar.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Automatisierung</h3>
+                    <p>n8n-basierte Workflows zur Entlastung deiner Prozesse. Integration von Tools und Services.</p>
+                </div>
+                <div class="service-card">
+                    <h3>GitHub & DevOps</h3>
+                    <p>Versionskontrolle, CI/CD-Pipelines und Infrastructure as Code. Professionelle Entwicklung.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Interne Tooling</h3>
+                    <p>Custom Tools und Systeme für dein Unternehmen. Effizient und wartbar.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Consulting</h3>
+                    <p>Pragmatische Beratung für deine Tech-Strategie. Fokus auf Umsetzbarkeit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>Über WEBGUARDS</h2>
+            <div class="about-section">
+                <p>WEBGUARDS UG ist ein IT-Services-Unternehmen mit Sitz in Rostock. Wir arbeiten pragmatisch, fokussiert und zielorientiert.</p>
+                <p>Unsere Subsidiärien Röck UG und HR-Prospect-UG zeigen, dass wir nicht nur beraten, sondern auch umsetzen und unternehmerisch handeln.</p>
+                <p>Wir setzen auf moderne Tech-Stacks (Kotlin, PHP, n8n, Docker, GitHub) und automatisieren, was automatisiert werden kann. KI ist für uns ein Werkzeug, keine Religion.</p>
+                <p><strong>Kontakt:</strong> ob@webguards.de | +49 381 40567001</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="mailto:ob@webguards.de">Email</a>
+                <a href="https://github.com/WEBGUARDS-DE">GitHub</a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 WEBGUARDS UG. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
