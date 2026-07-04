@@ -122,16 +122,7 @@
     </style>
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <a href="/" class="logo">WEBGUARDS</a>
-            <nav>
-                <a href="/">Startseite</a>
-                <a href="/#services">Services</a>
-                <a href="/#contact">Kontakt</a>
-            </nav>
-        </div>
-    </header>
+    {% include nav.html %}
 
     <div class="container">
         <h1>Impressum</h1>
@@ -179,13 +170,7 @@
         </p>
     </div>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-bottom">
-                <p>&copy; 2025 WEBGUARDS UG. Alle Rechte vorbehalten. | <a href="/impressum/">Impressum</a></p>
-            </div>
-        </div>
-    </footer>
+    {% include footer.html %}
 </body>
 </html>
 
