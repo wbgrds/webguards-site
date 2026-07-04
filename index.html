@@ -353,7 +353,32 @@
     </style>
 </head>
 <body>
-    {% include nav.html %}
+    <header>
+        <div class="header-content">
+            <a href="/" class="logo">WEBGUARDS</a>
+            <div class="header-right">
+                <nav id="nav-desktop">
+                    <a href="/#services">Services</a>
+                    <a href="/#contact">Kontakt</a>
+                    <a href="/#about">Über uns</a>
+                    <a href="/webguards-site/impressum/">Impressum</a>
+                    <a href="/webguards-site/datenschutz/">Datenschutz</a>
+                </nav>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <nav class="mobile-nav" id="mobile-nav">
+            <a href="/#services">Services</a>
+            <a href="/#contact">Kontakt</a>
+            <a href="/#about">Über uns</a>
+            <a href="/webguards-site/impressum/">Impressum</a>
+            <a href="/webguards-site/datenschutz/">Datenschutz</a>
+        </nav>
+    </header>
 
     <section class="hero">
         <div class="hero-content">
@@ -430,7 +455,13 @@
         </div>
     </section>
 
-    {% include footer.html %}
+    <footer>
+        <div class="footer-content">
+            <div class="footer-bottom">
+                <p>&copy; 2025 WEBGUARDS UG. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
 
     <script>
         const hamburger = document.getElementById('hamburger');
