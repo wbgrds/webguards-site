@@ -300,9 +300,8 @@ main {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    max-width: 1330px;
+    max-width: 1200px;
     width: 100%;
-    padding: 4rem 4rem;
 }
 
 main > section,
