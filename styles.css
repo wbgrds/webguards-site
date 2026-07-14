@@ -373,6 +373,10 @@ main > div {
 
 .solution-box {
     border-left: 4px solid var(--text);
+    background: rgba(115, 202, 255, 0.05);
+    border-right: 1px solid rgba(115, 202, 255, 0.3);
+    border-top: 1px solid rgba(115, 202, 255, 0.3);
+    border-bottom: 1px solid rgba(115, 202, 255, 0.3);
 }
 
 .problem-box h3, .solution-box h3 {
