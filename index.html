@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WEBGUARDS UG – Prozessoptimierung & Automatisierung</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -126,8 +123,8 @@
                     <p>Analyse und Verbesserung bestehender Abläufe. Engpässe identifizieren, effiziente Lösungen implementieren.</p>
                 </div>
                 <div class="service-card">
-                    <h3>Projekt-orientierte Firmengründung</h3>
-                    <p>Gründung von Tochter-Unternehmen (UG, GmbH) für neue Geschäftsmodelle. Von Planung bis Handelsregister.</p>
+                    <h3>Firmengründung</h3>
+                    <p>Gründung von Unternehmen (UG, GmbH) für neue Geschäftsmodelle. Von Planung bis Handelsregister.</p>
                 </div>
             </div>
         </section>
@@ -146,7 +143,7 @@
                     <img src="https://avatars.githubusercontent.com/u/233154854?v=4&size=200" alt="Olaf Scharfenberg">
                     <h3>Olaf Scharfenberg</h3>
                     <p><strong>IT-Techniker & Gründer</strong></p>
-                    <p>Builds Android Apps (Kotlin/Compose), n8n Automation, und alles, was die Arbeit leichter macht. Pragmatist. Nutzt KI smart.</p>
+                    <p>Websites, n8n Automation, und alles, was die Arbeit leichter macht. Pragmatist. Nutzt KI smart.</p>
                 </div>
                 <div class="team-member">
                     <div class="placeholder-image">VT</div>
@@ -163,12 +160,9 @@
         <section id="contact">
             <h2 class="section-title">Kontakt</h2>
             <div class="contact-grid">
-                <div class="contact-column">
-                    <div class="contact-info">
-                        <p><strong>WEBGUARDS UG</strong></p>
-                        <p><a href="mailto:ob@webguards.de">ob@webguards.de</a></p>
-                        <p><a href="tel:+493814056700">+49 381 40567001</a></p>
-                    </div>
+                <div class="contact-column contact-info-column">
+                    <p style="margin-top: 0; color: #73CAFF;">Wir prüfen deinen Prozess – ehrlich, technisch, lösungsorientiert.</p>
+                    <p style="color: #73CAFF;">Kontakt per WhatsApp/Anruf – Antwort zeitnah.</p>
                 </div>
                 <div class="contact-column">
                     <a href="https://wa.me/493814056700" class="contact-button" target="_blank">
@@ -196,7 +190,7 @@
     </main>
 
     <footer>
-    © 2025 WEBGUARDS UG. Alle Rechte vorbehalten.
+    © 1999 – 2026 WEBGUARDS. Alle Rechte vorbehalten.
 </footer>
 
 
@@ -204,15 +198,29 @@
         const hamburger = document.getElementById('hamburger');
         const mobileNav = document.getElementById('mobile-nav');
 
-        hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('active');
-            mobileNav.classList.toggle('active');
-        });
+        if (hamburger && mobileNav) {
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('active');
+                mobileNav.classList.toggle('active');
+            });
+        }
 
         document.querySelectorAll('#mobile-nav a').forEach(link => {
-            link.addEventListener('click', () => {
-                hamburger.classList.remove('active');
-                mobileNav.classList.remove('active');
+            link.addEventListener('click', (e) => {
+                if (!link.classList.contains('nav-dropdown-toggle')) {
+                    hamburger.classList.remove('active');
+                    mobileNav.classList.remove('active');
+                }
+            });
+        });
+
+        // Dropdown menu toggle for mobile
+        document.querySelectorAll('.nav-dropdown-toggle').forEach(toggle => {
+            toggle.addEventListener('click', (e) => {
+                e.preventDefault();
+                const dropdown = toggle.closest('.nav-dropdown');
+                const menu = dropdown.querySelector('.nav-dropdown-menu');
+                menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
             });
         });
 
