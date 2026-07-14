@@ -365,6 +365,12 @@ main > div {
     padding: 2rem;
     border-radius: 8px;
     background: rgba(10, 31, 53, 0.5);
+    transition: all 0.3s;
+}
+
+.problem-box:hover, .solution-box:hover {
+    background: rgba(115, 202, 255, 0.1);
+    transform: translateY(-5px);
 }
 
 .problem-box {
