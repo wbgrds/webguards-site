@@ -20,7 +20,7 @@
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: var(--bg);
     color: var(--text);
     line-height: 1.6;
@@ -69,6 +69,12 @@ header {
     font-weight: 700;
     color: #0d2541;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.logo svg {
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 1));
 }
 
 nav a {
@@ -85,6 +91,47 @@ a {
 
 nav a:hover {
     color: #73CAFF;
+}
+
+.nav-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.nav-dropdown-toggle {
+    cursor: pointer;
+    display: inline-block;
+}
+
+.nav-dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #ffffff;
+    min-width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    z-index: 1000;
+    padding: 0.5rem 0;
+}
+
+.nav-dropdown-menu a {
+    display: block;
+    padding: 0.75rem 1rem;
+    color: #333333;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin: 0;
+}
+
+.nav-dropdown-menu a:hover {
+    background-color: #f0f0f0;
+    color: #0d2541;
+}
+
+.nav-dropdown:hover .nav-dropdown-menu {
+    display: block;
 }
 
 #hamburger {
@@ -332,6 +379,13 @@ main > div {
     overflow: hidden;
 }
 
+.hero-logo {
+    display: block;
+    margin: 0 auto 2rem;
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 1));
+    align-self: center;
+}
+
 #networkCanvas {
     position: absolute;
     top: 0;
@@ -440,14 +494,99 @@ main > div {
     line-height: 1.6;
 }
 
-#contact {
-    text-align: center;
+#team {
     margin-bottom: 4rem;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.team-member {
+    background: rgba(115, 202, 255, 0.05);
+    border: 1px solid rgba(115, 202, 255, 0.3);
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.team-member:hover {
+    background: rgba(115, 202, 255, 0.1);
+    transform: translateY(-5px);
+}
+
+.team-member img {
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    object-fit: cover;
+    border: 2px solid rgba(115, 202, 255, 0.3);
+}
+
+.placeholder-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(115, 202, 255, 0.1);
+    border: 2px solid rgba(115, 202, 255, 0.3);
+    font-size: 2rem;
+    font-weight: bold;
+    color: #73CAFF;
+}
+
+.team-member h3 {
+    margin: 1rem 0 0.5rem;
+    font-size: 1.2rem;
+}
+
+.team-member p {
+    color: #73CAFF;
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+.apply-button {
+    color: #73CAFF;
+    transition: all 0.3s;
+}
+
+.apply-button:hover {
+    background: rgba(115, 202, 255, 0.15) !important;
+    transform: translateY(-2px);
+}
+
+#contact {
+    margin-bottom: 4rem;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.contact-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
 }
 
 .contact-info {
     font-size: 1.1rem;
     line-height: 2;
+    text-align: center;
 }
 
 .contact-info a {
@@ -458,6 +597,40 @@ main > div {
 
 .contact-info a:hover {
     text-decoration: underline;
+}
+
+.contact-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 1rem 2rem;
+    background: rgba(115, 202, 255, 0.05);
+    border: 1px solid rgba(115, 202, 255, 0.3);
+    border-radius: 28px;
+    color: #73CAFF;
+    text-decoration: none;
+    transition: all 0.3s;
+    text-align: center;
+    width: 100%;
+    max-width: 200px;
+}
+
+.contact-button:hover {
+    background: rgba(115, 202, 255, 0.1);
+    transform: translateY(-5px);
+}
+
+.button-icon {
+    font-size: 1.5rem;
+    color: #73CAFF;
+}
+
+.button-label {
+    color: #73CAFF;
+    font-weight: 500;
+    font-size: 1.1rem;
 }
 
 #about {
