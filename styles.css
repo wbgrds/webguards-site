@@ -54,8 +54,8 @@ header {
     max-width: 1200px;
     margin-right: auto;
     margin-left: auto;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 2rem;
+    padding-left: 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -454,8 +454,8 @@ footer p {
     max-width: 1200px;
     margin-right: auto;
     margin-left: auto;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 2rem;
+    padding-left: 2rem;
     height: 100%;
     display: flex;
     align-items: center;
