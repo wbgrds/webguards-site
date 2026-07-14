@@ -313,6 +313,10 @@ main > div {
 .hero {
     text-align: center;
     margin-bottom: 4rem;
+    height: calc(100vh - 200px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .hero h1 {
