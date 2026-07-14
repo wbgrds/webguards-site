@@ -300,6 +300,13 @@ main {
     width: 100%;
 }
 
+main > section,
+main > div {
+    border: 2px dotted #ff0000;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
 .hero {
     text-align: center;
     margin-bottom: 4rem;
