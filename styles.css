@@ -305,6 +305,8 @@ main {
 
 main > section,
 main > div {
+    width: 100%;
+    max-width: 1200px;
     border: 1px solid #050f1a45;
     padding: 2rem;
     margin-bottom: 2rem;
