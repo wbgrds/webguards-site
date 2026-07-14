@@ -338,7 +338,7 @@ main > div {
 
 .hero p {
     font-size: 1.2rem;
-    color: #b0b0b0;
+    color: #73CAFF;
     max-width: 600px;
     margin: 0 auto;
 }
@@ -411,7 +411,7 @@ main > div {
 }
 
 .service-card p {
-    color: #b0b0b0;
+    color: #73CAFF;
     line-height: 1.6;
 }
 
@@ -450,7 +450,7 @@ main > div {
 #about p {
     line-height: 1.8;
     margin-bottom: 1rem;
-    color: #b0b0b0;
+    color: #73CAFF;
 }
 
 /* Footer */
