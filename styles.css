@@ -294,7 +294,9 @@ footer {
 /* Main Content */
 main {
     max-width: 1200px;
-    margin: 0 auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
     padding: 4rem 4rem;
     width: 100%;
 }
