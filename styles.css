@@ -305,7 +305,7 @@ main {
 main > section,
 main > div {
     border: 2px dotted #ff0000;
-    padding: 2rem;
+    padding: 0rem;
     margin-bottom: 2rem;
     border-radius: 14px;
 }
