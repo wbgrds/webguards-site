@@ -79,6 +79,10 @@ nav a {
     transition: color 0.3s;
 }
 
+a {
+    color: #73CAFF;
+}
+
 nav a:hover {
     color: #73CAFF;
 }
