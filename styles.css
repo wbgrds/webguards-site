@@ -49,6 +49,7 @@ header {
     width: 100%;
     max-width: 1200px;
     height: 75px;
+    border-radius: 14px;
 }
 
 .header-content {
@@ -306,6 +307,7 @@ main > div {
     border: 2px dotted #ff0000;
     padding: 2rem;
     margin-bottom: 2rem;
+    border-radius: 14px;
 }
 
 .hero {
@@ -450,6 +452,7 @@ footer {
     z-index: 900;
     width: 100%;
     max-width: 1200px;
+    border-radius: 14px;
 }
 
 footer p {
