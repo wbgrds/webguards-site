@@ -4,150 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Impressum – WEBGUARDS UG</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            color: #f0f0f0;
-            background: linear-gradient(135deg, #0d2847 0%, #1a3a52 100%);
-            min-height: 100vh;
-            padding-bottom: 120px;
-        }
-
-        header {
-            position: sticky;
-            top: 0;
-            background: #0a1f35;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-            z-index: 1000;
-        }
-
-        .header-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 1rem 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: #4db8ff;
-            text-decoration: none;
-        }
-
-        nav a {
-            color: #f0f0f0;
-            text-decoration: none;
-            margin: 0 1.5rem;
-            font-size: 0.95rem;
-            transition: color 0.3s;
-        }
-
-        nav a:hover {
-            color: #4db8ff;
-        }
-
-        #hamburger {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
-            background: none;
-            border: none;
-        }
-
-        #hamburger span {
-            width: 25px;
-            height: 3px;
-            background: #4db8ff;
-            margin: 5px 0;
-            transition: all 0.3s;
-        }
-
-        #hamburger.active span:nth-child(1) {
-            transform: rotate(45deg) translate(10px, 10px);
-        }
-
-        #hamburger.active span:nth-child(2) {
-            opacity: 0;
-        }
-
-        #hamburger.active span:nth-child(3) {
-            transform: rotate(-45deg) translate(7px, -7px);
-        }
-
-        #mobile-nav {
-            display: none;
-            position: absolute;
-            top: 60px;
-            right: 0;
-            background: #0a1f35;
-            flex-direction: column;
-            width: 100%;
-            border-top: 1px solid #4db8ff;
-        }
-
-        #mobile-nav.active {
-            display: flex;
-        }
-
-        #mobile-nav a {
-            padding: 1rem 2rem;
-            text-decoration: none;
-            color: #f0f0f0;
-            border-bottom: 1px solid #1a3a52;
-        }
-
-        @media (max-width: 768px) {
-            #hamburger {
-                display: flex;
-            }
-
-            #nav-desktop {
-                display: none;
-            }
-        }
-
-        main {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 4rem 2rem;
-        }
-
-        h1 {
-            color: #4db8ff;
-            margin-bottom: 2rem;
-        }
-
-        p {
-            line-height: 1.8;
-            margin-bottom: 1rem;
-            color: #b0b0b0;
-        }
-
-        strong {
-            color: #f0f0f0;
-        }
-
-        footer {
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            background: #0a1f35;
-            text-align: center;
-            padding: 2rem;
-            border-top: 1px solid #4db8ff;
-            font-size: 0.9rem;
-            color: #b0b0b0;
-        }
-    </style>
+    <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
     <header>
@@ -179,32 +36,32 @@
     <main>
         <h1>Impressum</h1>
 
-        <h2 style="color: #4db8ff; margin-top: 2rem;">Angaben gemäß § 5 TMG</h2>
+        <h2>Angaben gemäß § 5 TMG</h2>
         <p>
             <strong>WEBGUARDS UG (haftungsbeschränkt)</strong><br>
             Rostock, Deutschland
         </p>
 
-        <h2 style="color: #4db8ff; margin-top: 2rem;">Vertreter</h2>
+        <h2>Vertreter</h2>
         <p>
             <strong>Olaf Scharfenberg</strong><br>
             Geschäftsführer
         </p>
 
-        <h2 style="color: #4db8ff; margin-top: 2rem;">Kontakt</h2>
+        <h2>Kontakt</h2>
         <p>
-            E-Mail: <a href="mailto:ob@webguards.de" style="color: #4db8ff;">ob@webguards.de</a><br>
-            Telefon: <a href="tel:+493814056700" style="color: #4db8ff;">+49 381 40567001</a>
+            E-Mail: <a href="mailto:ob@webguards.de">ob@webguards.de</a><br>
+            Telefon: <a href="tel:+493814056700">+49 381 40567001</a>
         </p>
 
-        <h2 style="color: #4db8ff; margin-top: 2rem;">Verantwortlich für den Inhalt (§ 55 Abs. 2 RStV)</h2>
+        <h2>Verantwortlich für den Inhalt (§ 55 Abs. 2 RStV)</h2>
         <p>
             Olaf Scharfenberg<br>
             WEBGUARDS UG<br>
             Rostock
         </p>
 
-        <h2 style="color: #4db8ff; margin-top: 2rem;">Haftungsausschluss (Disclaimer)</h2>
+        <h2>Haftungsausschluss (Disclaimer)</h2>
         <p>
             Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich.
         </p>

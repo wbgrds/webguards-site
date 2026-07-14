@@ -173,6 +173,8 @@ h1 {
 h2 {
     color: #73CAFF;
     text-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 
 h3 {
