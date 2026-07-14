@@ -314,6 +314,7 @@ main > div {
     max-width: 1200px;
     border: 1px solid #050f1a45;
     padding: 2rem;
+    margin-top: 2rem;
     margin-bottom: 2rem;
     border-radius: 14px;
     box-shadow: 14px 14px 20px #050f1a, -14px -14px 20px #153b6866;
