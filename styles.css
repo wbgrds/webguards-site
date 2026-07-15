@@ -520,6 +520,7 @@ main > div {
 .problem-card,
 .solution-card,
 .impressum-card,
+.datenschutz-card,
 .contact-button {
     background: rgba(115, 202, 255, 0.05);
     border: 1px solid rgba(115, 202, 255, 0.3);
@@ -533,6 +534,7 @@ main > div {
 .problem-card:hover,
 .solution-card:hover,
 .impressum-card:hover,
+.datenschutz-card:hover,
 .contact-button:hover {
     background: rgba(115, 202, 255, 0.1);
     transform: translateY(-5px);
