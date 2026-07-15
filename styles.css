@@ -793,9 +793,9 @@ footer p {
     z-index: 99999;
     position: fixed;
     --call-us-main-accent-color: var(--main-accent-color);
-    --call-us-main-background-color: var(--light-color);
+    --call-us-main-background-color: var(--main-accent-color);
     --call-us-plate-background-color: var(--main-accent-color);
     --call-us-plate-font-color: var(--light-color);
-    --call-us-main-font-color: var(--main-accent-color);
+    --call-us-main-font-color: var(--light-color);
     --call-us-agent-bubble-color: var(--main-transparent-color);
 }
