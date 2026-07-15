@@ -185,13 +185,13 @@ nav a:hover {
 
 @media (max-width: 768px) {
     header {
-        width: calc(100% - 30px);
-        margin: 0 15px;
+        width: calc(100% - 0px);
+        margin: 0 0;
     }
 
     footer {
-        width: calc(100% - 30px);
-        margin: 0 15px;
+        width: calc(100% - 0px);
+        margin: 0 0;
     }
 
     #hamburger {
