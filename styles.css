@@ -784,7 +784,7 @@ footer p {
     .problem-solution {
         grid-template-columns: 1fr;
     }
-}
+}/*
 #wp-live-chat-by-3CX {
     right: 28px;
     bottom: 7px;
@@ -798,4 +798,4 @@ footer p {
     --call-us-plate-font-color: var(--light-color);
     --call-us-main-font-color: var(--main-accent-color);
     --call-us-agent-bubble-color: var(--main-transparent-color);
-}
+}*/
