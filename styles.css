@@ -616,6 +616,30 @@ main > div {
     transform: translateY(-2px);
 }
 
+.impressum-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.impressum-column {
+    background: rgba(115, 202, 255, 0.05);
+    border: 1px solid rgba(115, 202, 255, 0.3);
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.impressum-column h3 {
+    margin: 0 0 1rem;
+    font-size: 1.1rem;
+}
+
+.impressum-column p {
+    margin: 0;
+    line-height: 1.6;
+}
+
 #contact {
     margin-bottom: 4rem;
 }
