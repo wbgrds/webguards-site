@@ -799,3 +799,6 @@ footer p {
     --call-us-main-font-color: var(--light-color);
     --call-us-agent-bubble-color: var(--main-transparent-color);
 }
+.minimized-button svg {
+    fill: var(var(--light-color), #fff)!important;
+}
