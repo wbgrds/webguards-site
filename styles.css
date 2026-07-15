@@ -30,7 +30,6 @@ body {
     flex-direction: column;
     padding-top: 75px;
     padding-bottom: 75px;
-    -webkit-text-stroke: 0.5px #0d2541;
     text-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
 }
 
