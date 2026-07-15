@@ -685,6 +685,7 @@ main > div {
     justify-content: left;
     gap: 0.75rem;
     padding: 0.4rem 1rem;
+    margin: 15px 0 15px 0;
     color: #73CAFF;
     text-decoration: none;
     text-align: center;
