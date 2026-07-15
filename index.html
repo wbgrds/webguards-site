@@ -336,5 +336,35 @@ enable-direct-call="false"
 enable-ga="false" 
 ></call-us> 
 <script defer src="https://downloads-global.3cx.com/downloads/livechatandtalk/v1/callus.js" id="tcx-callus-js" charset="utf-8"></script>
+    <script>
+(function () {
+  function patchShadow(shadow) {
+    const replace = () => {
+      shadow.querySelectorAll('span').forEach(span => {
+        if (span.textContent.trim() === 'Powered by 3CX') {
+          span.textContent = 'WEBGUARDS over 3CX';
+        }
+      });
+    };
+    replace();
+    const observer = new MutationObserver(replace);
+    observer.observe(shadow, {
+      childList: true,
+      subtree: true
+    });
+  }
+  const hostObserver = new MutationObserver(() => {
+    const host = document.getElementById('wp-live-chat-by-3CX');
+    if (host && host.shadowRoot) {
+      patchShadow(host.shadowRoot);
+      hostObserver.disconnect();
+    }
+  });
+  hostObserver.observe(document.body, {
+    childList: true,
+    subtree: true
+  });
+})();
+</script>
 </body>
 </html>
