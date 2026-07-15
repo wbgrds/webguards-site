@@ -234,10 +234,10 @@ nav a:hover {
         border-bottom: none;
     }
 
-    .team-grid {
-        grid-template-columns: 1fr;
-    }
-
+    .services-grid,
+    .team-grid,
+    .impressum-grid,
+    .datenschutz-grid,
     .contact-grid {
         grid-template-columns: 1fr;
     }
@@ -516,10 +516,15 @@ main > div {
     color: var(--text);
 }
 
-.services-grid {
+/* ========== Grid Styles ========== */
+.services-grid,
+.team-grid,
+.impressum-grid,
+.datenschutz-grid,
+.contact-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .service-card {
@@ -550,9 +555,6 @@ main > div {
 }
 
 .team-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
     margin-bottom: 2rem;
 }
 
@@ -617,9 +619,6 @@ main > div {
 }
 
 .impressum-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
     margin-bottom: 2rem;
 }
 
@@ -645,9 +644,6 @@ main > div {
 }
 
 .contact-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
     margin-top: 2rem;
 }
 
