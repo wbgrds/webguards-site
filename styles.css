@@ -30,7 +30,6 @@ body {
     flex-direction: column;
     padding-top: 75px;
     padding-bottom: 75px;
-    -webkit-text-stroke: 0.5px #0d2541;
     text-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
 }
 
@@ -186,13 +185,13 @@ nav a:hover {
 
 @media (max-width: 768px) {
     header {
-        width: calc(100% - 30px);
-        margin: 0 15px;
+        width: calc(100% - 0px);
+        margin: 0 0;
     }
 
     footer {
-        width: calc(100% - 30px);
-        margin: 0 15px;
+        width: calc(100% - 0px);
+        margin: 0 0;
     }
 
     #hamburger {
@@ -552,7 +551,7 @@ main > div {
 
 .team-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
     margin-bottom: 2rem;
 }
@@ -623,7 +622,7 @@ main > div {
 
 .contact-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
     margin-top: 2rem;
 }
