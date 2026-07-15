@@ -519,6 +519,10 @@ main > div {
     grid-template-columns: 1fr;
 }
 
+.datenschutz-card ul {
+    margin-left: 1.5rem;
+}
+
 /* Card Base Styles & Hover Effects */
 .service-card,
 .team-card,
