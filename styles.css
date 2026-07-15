@@ -466,41 +466,28 @@ main > div {
     margin-bottom: 4rem;
 }
 
-.problem-box, .solution-box {
+.problem-card, .solution-card {
     padding: 2rem;
     border-radius: 8px;
-    background: rgba(10, 31, 53, 0.5);
+    background: rgba(115, 202, 255, 0.05);
     transition: all 0.3s;
 }
 
-.problem-box:hover, .solution-box:hover {
-    background: rgba(115, 202, 255, 0.1);
-    transform: translateY(-5px);
+.problem-card {
+    border-left: 4px solid var(--accent-red) !important;
 }
 
-.problem-box {
-    border-left: 4px solid var(--accent-red);
-    background: rgba(115, 202, 255, 0.05);
-    border-right: 1px solid rgba(115, 202, 255, 0.3);
-    border-top: 1px solid rgba(115, 202, 255, 0.3);
-    border-bottom: 1px solid rgba(115, 202, 255, 0.3);
+.solution-card {
+    border-left: 4px solid var(--text) !important;
 }
 
-.solution-box {
-    border-left: 4px solid var(--text);
-    background: rgba(115, 202, 255, 0.05);
-    border-right: 1px solid rgba(115, 202, 255, 0.3);
-    border-top: 1px solid rgba(115, 202, 255, 0.3);
-    border-bottom: 1px solid rgba(115, 202, 255, 0.3);
-}
-
-.problem-box h3, .solution-box h3 {
+.problem-card h3, .solution-card h3 {
     margin-bottom: 1rem;
     font-size: 1.3rem;
     color: var(--text);
 }
 
-.problem-box ul, .solution-box ul {
+.problem-card ul, .solution-card ul {
     list-style-position: inside;
     line-height: 1.8;
 }
@@ -527,7 +514,13 @@ main > div {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
-.service-card {
+/* Card Base Styles & Hover Effects */
+.service-card,
+.team-card,
+.problem-card,
+.solution-card,
+.impressum-card,
+.contact-button {
     background: rgba(115, 202, 255, 0.05);
     border: 1px solid rgba(115, 202, 255, 0.3);
     padding: 2rem;
@@ -535,7 +528,12 @@ main > div {
     transition: all 0.3s;
 }
 
-.service-card:hover {
+.service-card:hover,
+.team-card:hover,
+.problem-card:hover,
+.solution-card:hover,
+.impressum-card:hover,
+.contact-button:hover {
     background: rgba(115, 202, 255, 0.1);
     transform: translateY(-5px);
 }
@@ -558,21 +556,11 @@ main > div {
     margin-bottom: 2rem;
 }
 
-.team-member {
-    background: rgba(115, 202, 255, 0.05);
-    border: 1px solid rgba(115, 202, 255, 0.3);
-    padding: 2rem;
-    border-radius: 8px;
+.team-card {
     text-align: center;
-    transition: all 0.3s;
 }
 
-.team-member:hover {
-    background: rgba(115, 202, 255, 0.1);
-    transform: translateY(-5px);
-}
-
-.team-member img {
+.team-card img {
     display: block;
     width: 150px;
     height: 150px;
@@ -597,12 +585,12 @@ main > div {
     color: #73CAFF;
 }
 
-.team-member h3 {
+.team-card h3 {
     margin: 1rem 0 0.5rem;
     font-size: 1.2rem;
 }
 
-.team-member p {
+.team-card p {
     color: #73CAFF;
     margin-bottom: 0.5rem;
     line-height: 1.6;
@@ -622,19 +610,13 @@ main > div {
     margin-bottom: 2rem;
 }
 
-.impressum-column {
-    background: rgba(115, 202, 255, 0.05);
-    border: 1px solid rgba(115, 202, 255, 0.3);
-    padding: 2rem;
-    border-radius: 8px;
-}
 
-.impressum-column h3 {
+.impressum-card h3 {
     margin: 0 0 1rem;
     font-size: 1.1rem;
 }
 
-.impressum-column p {
+.impressum-card p {
     margin: 0;
     line-height: 1.6;
 }
@@ -681,20 +663,12 @@ main > div {
     justify-content: center;
     gap: 0.75rem;
     padding: 0.4rem 2rem;
-    background: rgba(115, 202, 255, 0.05);
-    border: 1px solid rgba(115, 202, 255, 0.3);
-    border-radius: 28px;
     color: #73CAFF;
     text-decoration: none;
-    transition: all 0.3s;
     text-align: center;
     width: 100%;
     max-width: 200px;
-}
-
-.contact-button:hover {
-    background: rgba(115, 202, 255, 0.1);
-    transform: translateY(-5px);
+    border-radius: 28px;
 }
 
 .button-icon {
