@@ -800,6 +800,8 @@ footer p {
     --call-us-main-font-color: var(--light-color);
     --call-us-agent-bubble-color: var(--main-transparent-color);
     --call-us-form-header-background: var(--light-color);
+    --call-us-main-button-background: var(--light-color);
+    --call-us-form-height 50px;
 }
 .minimized-button {
     background-color: var(--call-us-main-accent-color) !important;
