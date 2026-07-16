@@ -799,9 +799,9 @@ footer p {
     --call-us-form-height 50px;
     /*
     --call-us-round-button: var(--bg);
+ */
 
-
-    --call-us-element-side-offset-small: */
+    --call-us-element-side-offset-small: 10px;
     --call-us-font-size: 14px;
     --call-us-plate-bg-with-gradient: green;
     --call-us-form-height: 585px;
