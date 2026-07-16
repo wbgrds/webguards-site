@@ -809,3 +809,6 @@ footer p {
     --call-us-form-width: 350px;
 }
 
+.panel .panel_content.calling-window[data-v-c8580658], .panel .panel_content.chat-form[data-v-c8580658], .panel .panel_content.small-form[data-v-c8580658] {
+    border-radius: 14px;
+}
