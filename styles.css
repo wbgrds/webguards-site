@@ -810,9 +810,9 @@ footer p {
     */
 }
 
-    #wp-live-chat-by-3CX {
-        right: alc((100vw - 1200px) / 2 + 8px);
-    }
+#wp-live-chat-by-3CX {
+        right: calc((100vw - 1200px) / 2 + 8px);
+}
 @media (max-width: 300px) {
     #wp-live-chat-by-3CX {
         right: 8px;
