@@ -17,7 +17,7 @@
     --accent-blue: #4db8ff;
     --accent-red: #ff6b6b;
     --light-text: #333333;
-    --main-transparent-color: #0d25411a;
+    --main-transparent: #0d25411a;
 
 }
 
@@ -788,14 +788,14 @@ footer p {
     line-height: 17px;
     z-index: 99999;
     position: fixed;
-    --call-us-main-accent-color: var(--dark-color);
-    --call-us-main-background-color: var(--text-color);
-    --call-us-plate-background-color: var(--dark-color);
-    --call-us-plate-font-color: var(--text-color);
-    --call-us-main-font-color: var(--dark-color);
-    --call-us-agent-bubble-color: var(--main-transparent-color);
-    --call-us-form-header-background: var(--text-color);
-    --call-us-main-button-background: var(--text-color);
+    --call-us-main-accent-color: var(--dark);
+    --call-us-main-background-color: var(--text);
+    --call-us-plate-background-color: var(--dark);
+    --call-us-plate-font-color: var(--text);
+    --call-us-main-font-color: var(--dark);
+    --call-us-agent-bubble-color: var(--main-transparent);
+    --call-us-form-header-background: var(--text);
+    --call-us-main-button-background: var(--text);
     --call-us-form-height 50px;
 }
 
