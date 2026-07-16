@@ -176,21 +176,32 @@
                     </a>
                 </div>
                 <div class="contact-column">
-                    
-  <!-- cal.com start -->
-      <script>
-      (function() {
-        var target = document.currentScript;
-        window.addEventListener('load', function() {
-          calendar.schedulingButton.load({
-            url: 'https://cal.com/wbgrds/rueckruf',
-            color: '#000000',
-            label: '📅 Rückruf vereinbaren',
-            target,
-          });
-        });
-      })();
-      </script>
+                    <script>
+                    (function() {
+                      var target = document.currentScript;
+                      window.addEventListener('load', function() {
+                        calendar.schedulingButton.load({
+                          url: 'https://cal.com/wbgrds/rueckruf',
+                          color: '#000000',
+                          label: 'Rückruf vereinbaren',
+                          target,
+                        });
+                        
+                        setTimeout(function() {
+                          var button = document.querySelector('.qxCTlb');
+                          if (button) {
+                            var textNode = button.textContent;
+                            var icon = document.createElement('i');
+                            icon.className = 'fas fa-calendar';
+                            icon.style.marginRight = '0.5rem';
+                            button.textContent = '';
+                            button.appendChild(icon);
+                            button.appendChild(document.createTextNode(textNode));
+                          }
+                        }, 100);
+                      });
+                    })();
+                    </script>
 
 <script>this.gcal=this.gcal||{};(function(_){var window=this;
 try{
