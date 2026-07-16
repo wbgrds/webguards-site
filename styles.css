@@ -814,3 +814,6 @@ footer p {
 .panel .panel_content.calling-window[data-v-c8580658], .panel .panel_content.chat-form[data-v-c8580658], .panel .panel_content.small-form[data-v-c8580658] {
     border-radius: 14px;
 }
+.msg-root .msg_bubble .avatar_container .avatar_img {
+    background-color: var(--bg);
+}
