@@ -797,11 +797,11 @@ footer p {
     --call-us-form-header-background: var(--text);
     --call-us-main-button-background: var(--text);
     --call-us-form-height 50px;
-
+    --call-us-z-index-header-call:1000;
     --call-us-round-button: 50%;
 
     --call-us-element-side-offset-small: 10px;
-    --call-us-font-size: 14px;
+    --call-us-font-size: 0.9rem;
     --call-us-plate-bg-with-gradient: var(--main-transparent);
     --call-us-form-height: 585px;
     --call-us-form-width:330px;
