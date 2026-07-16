@@ -797,5 +797,9 @@ footer p {
     --call-us-form-header-background: var(--text);
     --call-us-main-button-background: var(--text);
     --call-us-form-height 50px;
+    
+    --call-us-round-button: var(--bg);
+    --call-us-font-size: 14px;
+    --call-us-form-height: 35px;
 }
 
