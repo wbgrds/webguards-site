@@ -803,10 +803,8 @@ footer p {
     --call-us-main-button-background: var(--light-color);
     --call-us-form-height 50px;
 }
-.minimized-button {
-    background-color: var(--main-accent-color) !important;
-    border: 5px solid #d80027;
-}
+
+
 .minimized-button svg {
-    fill: var(var(--light-color), #fff) !important;
+    fill: #73caff !important;
 }
