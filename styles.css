@@ -810,7 +810,7 @@ footer p {
   --call-us-header-height
     */
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     #wp-live-chat-by-3CX {
         right: 4px;
     }
