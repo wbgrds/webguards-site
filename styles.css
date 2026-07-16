@@ -807,6 +807,9 @@ footer p {
     --call-us-form-width:330px;
     --call-us-small-form-height: 585px;
     --call-us-form-width: 350px;
+/*
+  --call-us-header-height
+    */
 }
 
 .panel .panel_content.calling-window[data-v-c8580658], .panel .panel_content.chat-form[data-v-c8580658], .panel .panel_content.small-form[data-v-c8580658] {
