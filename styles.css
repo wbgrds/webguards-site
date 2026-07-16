@@ -810,32 +810,6 @@ footer p {
     */
 }
 
-#wp-live-chat-by-3CX {
-        right: calc((100vw - 1200px) / 2 + 8px);
-}
-@media (max-width: 300px) {
-    #wp-live-chat-by-3CX {
-        right: 8px;
-    }
-}
-
-@media (max-width: 1200px) {
-    #wp-live-chat-by-3CX {
-        right: 8px;
-    }
-}
-
-
-
-.panel .panel_content.calling-window[data-v-c8580658], .panel .panel_content.chat-form[data-v-c8580658], .panel .panel_content.small-form[data-v-c8580658] {
-    border-radius: 14px;
-}
-.msg-root .msg_bubble .avatar_container .avatar_img {
-    background-color: var(--bg);
-}
-@media screen and (orientation: landscape) {
-    .panel .panel_content.calling-window[data-v-c8580658], .panel .panel_content.chat-form[data-v-c8580658], .panel .panel_content.small-form[data-v-c8580658] {
-        border-radius: 20px;
-        border: 3px solid red;
-    }
-}
+#wp-live-chat-by-3CX { right: 0px; }
+@media (min-width: 300px)  {#wp-live-chat-by-3CX {right: 8px;}}
+@media (min-width: 1201px) {#wp-live-chat-by-3CX {right: calc((100vw - 1200px) / 2 + 8px);}}
