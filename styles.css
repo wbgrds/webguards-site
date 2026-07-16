@@ -788,11 +788,11 @@ footer p {
     line-height: 17px;
     z-index: 99999;
     position: fixed;
-    --call-us-main-accent-color: var(--dark);
+    --call-us-main-accent-color: var(--bg);
     --call-us-main-background-color: var(--text);
-    --call-us-plate-background-color: var(--dark);
+    --call-us-plate-background-color: var(--bg);
     --call-us-plate-font-color: var(--text);
-    --call-us-main-font-color: var(--dark);
+    --call-us-main-font-color: var(--bg);
     --call-us-agent-bubble-color: var(--main-transparent);
     --call-us-form-header-background: var(--text);
     --call-us-main-button-background: var(--text);
