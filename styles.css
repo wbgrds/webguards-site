@@ -17,12 +17,7 @@
     --accent-blue: #4db8ff;
     --accent-red: #ff6b6b;
     --light-text: #333333;
-
-    --light-color: #73CAFF;
-    --dark-color: #0d2541;
-    --light-text: #464646;
-    --main-accent-color: #0d2541;
-    --main-transparent-color: #0d254110;
+    --main-transparent-color: #0d25411a;
 
 }
 
@@ -793,18 +788,14 @@ footer p {
     line-height: 17px;
     z-index: 99999;
     position: fixed;
-    --call-us-main-accent-color: var(--main-accent-color);
-    --call-us-main-background-color: var(--main-accent-color);
-    --call-us-plate-background-color: var(--main-accent-color);
-    --call-us-plate-font-color: var(--light-color);
-    --call-us-main-font-color: var(--light-color);
+    --call-us-main-accent-color: var(--dark-color);
+    --call-us-main-background-color: var(--text-color);
+    --call-us-plate-background-color: var(--dark-color);
+    --call-us-plate-font-color: var(--text-color);
+    --call-us-main-font-color: var(--dark-color);
     --call-us-agent-bubble-color: var(--main-transparent-color);
-    --call-us-form-header-background: var(--light-color);
-    --call-us-main-button-background: var(--light-color);
+    --call-us-form-header-background: var(--text-color);
+    --call-us-main-button-background: var(--text-color);
     --call-us-form-height 50px;
 }
 
-
-.minimized-button svg {
-    fill: #73caff !important;
-}
