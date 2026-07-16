@@ -782,8 +782,8 @@ footer p {
     }
 }
 #wp-live-chat-by-3CX {
-    right: 128px;
-    bottom: 7px;
+    right: calc((100vw - 1200px) / 2 + 4px);
+    bottom: 8px;
     font-size: 16px;
     line-height: 17px;
     z-index: 99999;
@@ -812,7 +812,7 @@ footer p {
 }
 @media (max-width: 768px) {
     #wp-live-chat-by-3CX {
-        right: 28px;
+        right: 4px;
     }
 }
 .panel .panel_content.calling-window[data-v-c8580658], .panel .panel_content.chat-form[data-v-c8580658], .panel .panel_content.small-form[data-v-c8580658] {
