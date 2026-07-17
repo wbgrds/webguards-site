@@ -175,6 +175,10 @@
                         <span class="button-label">Direktanruf</span>
                     </a>
                 </div>
+
+                
+                <div class="contact-column">
+                    <div id="cal-target"></div>
       <script>
       (function() {
         var target = document.currentScript;
@@ -188,34 +192,6 @@
         });
       })();
       </script>
-                
-                <div class="contact-column">
-                    <div id="cal-target"></div>
-                    <script>
-                    (function() {
-                      var target = document.getElementById('cal-target');
-                      window.addEventListener('load', function() {
-                        calendar.schedulingButton.load({
-                          url: 'https://cal.com/wbgrds/rueckruf',
-                          color: '#000000',
-                          label: 'Rückruf vereinbaren',
-                          target,
-                        });
-                        
-                        setTimeout(function() {
-                          var button = target.querySelector('.qxCTlb');
-                          if (button) {
-                            var textNode = button.textContent;
-                            var icon = document.createElement('i');
-                            icon.className = 'fas fa-calendar button-icon';
-                            button.textContent = '';
-                            button.appendChild(icon);
-                            button.appendChild(document.createTextNode(textNode));
-                          }
-                        }, 100);
-                      });
-                    })();
-                    </script>
 
 <script>this.gcal=this.gcal||{};(function(_){var window=this;
 try{
