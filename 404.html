@@ -175,6 +175,20 @@
                         <span class="button-label">Direktanruf</span>
                     </a>
                 </div>
+      <script>
+      (function() {
+        var target = document.currentScript;
+        window.addEventListener('load', function() {
+          calendar.schedulingButton.load({
+            url: 'https://cal.com/wbgrds/rueckruf',
+            color: '#000000',
+            label: 'Rückruf vereinbaren',
+            target,
+          });
+        });
+      })();
+      </script>
+                
                 <div class="contact-column">
                     <div id="cal-target"></div>
                     <script>
