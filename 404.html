@@ -184,7 +184,7 @@
                         calendar.schedulingButton.load({
                           url: 'https://cal.com/wbgrds/rueckruf',
                           color: '#000000',
-                          label: '<i class="fab fa-whatsapp button-icon"></i>Rückruf vereinbaren',
+                          label: 'Rückruf vereinbaren',
                           target,
                         });
                         
@@ -193,7 +193,7 @@
                           if (button) {
                             var textNode = button.textContent;
                             var icon = document.createElement('i');
-                            icon.className = 'fas fa-calendar';
+                            icon.className = 'fa fa-calendar';
                             button.textContent = '';
                             button.appendChild(icon);
                             button.appendChild(document.createTextNode(textNode));
