@@ -959,6 +959,7 @@ footer p {
   max-width: 191px;
   object-fit: contain;
   flex-shrink: 0;
+  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 1));
 }
 
 .modal-close {
