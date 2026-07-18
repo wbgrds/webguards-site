@@ -952,6 +952,7 @@ footer p {
   border-radius: 14px;
   flex-shrink: 0;
   gap: 16px;
+  z-index: 1;
 }
 
 .modal-logo {
