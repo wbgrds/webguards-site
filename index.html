@@ -31,6 +31,57 @@
     <meta property="og:url" content="https://webguards.de/">
     <meta property="og:type" content="website">
     <script src="/assets/scheduling-button-script.js"></script>
+    <script>
+    (function() {
+      function loadSchedulingButton(targetId, url, label, icon) {
+        var tries = 0;
+        var maxTries = 40;
+        var interval = setInterval(function() {
+          tries++;
+          var target = document.getElementById(targetId);
+          if (target && window.calendar && calendar.schedulingButton) {
+            calendar.schedulingButton.load({
+              url: url,
+              color: "#039BE5",
+              label: label,
+              target: target
+            });
+            setTimeout(() => {
+              const button = target.nextElementSibling;
+              if (button) {
+                button.innerHTML = "<span class='material-icons button-icon'>" + icon + "</span><span class='button-label'>" + label + "</span>";
+                button.classList.add("contact-button");
+                button.removeAttribute("style");
+                if (target.parentElement) {
+                  target.parentElement.classList.add("btn-contact", "intern0");
+                }
+              }
+            });
+            clearInterval(interval);
+          }
+          if (tries >= maxTries) {
+            if (target && !target.nextElementSibling) {
+              var link = document.createElement("a");
+              link.href = url;
+              link.target = "_blank";
+              link.rel = "noopener";
+              link.innerHTML = "<span class='material-icons button-icon'>" + icon + "</span><span class='button-label'>" + label + "</span>";
+              link.classList.add("contact-button");
+              if (target.parentElement) {
+                target.parentElement.classList.add("btn-contact", "intern0");
+              }
+              target.insertAdjacentElement("afterend", link);
+            }
+            clearInterval(interval);
+          }
+        }, 100);
+      }
+      window.addEventListener("load", function() {
+        loadSchedulingButton("cal", "https://cal.com/wbgrds/rueckruf", "Rückruftermin", "edit_calendar");
+        loadSchedulingButton("maps", "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2338.8394684630325!2d12.078469515941887!3d54.11204892478131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47ac51cd396e4261%3A0x38c11e5072bd6d77!2sWEBGUARDS%20Internet%20Service!5e0!3m2!1sde!2sde!4v1638797737726!5m2!1sde!2sde", "Standort", "location_on");
+      });
+    })();
+    </script>
     <link rel="canonical" href="https://webguards.de/">
 </head>
 <body>
@@ -385,10 +436,7 @@ enable-ga="false"
   });
 })();
 </script>
-<link href="/assets/scheduling-button-script.css" rel="stylesheet">
-<script src="/assets/scheduling-button-script.js" defer></script>
-<link href="/assets/scheduling-button-script.css" rel="stylesheet">
-<script src="/assets/scheduling-button-script.js" defer></script>
+
 <!-- Google Calendar Appointment Scheduling begin -->
 <script>
 (function() {
