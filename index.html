@@ -49,15 +49,16 @@
             setTimeout(() => {
               const button = target.nextElementSibling;
               if (button) {
+                // Entferne Google-Klassen, behalte nur unser Styling
+                button.className = "contact-button";
+                button.removeAttribute('style');
                 button.innerHTML = "<span class='material-icons button-icon'>" + icon + "</span><span class='button-label'>" + label + "</span>";
-                button.classList.add("contact-button");
-                button.removeAttribute("style");
                 if (target.parentElement) {
                   target.parentElement.classList.add("btn-contact", "intern0");
                 }
               }
-            });
-            clearInterval(interval);
+              clearInterval(interval);
+            }, 50);
           }
           if (tries >= maxTries) {
             if (target && !target.nextElementSibling) {
