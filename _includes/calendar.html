@@ -1,0 +1,55 @@
+<link href="/assets/scheduling-button-script.css" rel="stylesheet">
+<script src="/assets/scheduling-button-script.js" defer></script>
+<!-- Google Calendar Appointment Scheduling begin -->
+<script>
+(function() {
+  function loadSchedulingButton(targetId, url, label, icon) {
+    var tries = 0;
+    var maxTries = 40; // ~4s total
+    var interval = setInterval(function() {
+      tries++;
+      var target = document.getElementById(targetId);
+      if (target && window.calendar && calendar.schedulingButton) {
+        calendar.schedulingButton.load({
+          url: url,
+          color: '#039BE5',
+          label: label,
+          target: target
+        });
+        setTimeout(() => {
+          const button = target.nextElementSibling;
+          if (button) {
+            button.innerHTML = "<span class='material-icons'>" + icon + "</span>" + label;
+            button.classList.add('intern');
+            button.removeAttribute('style');
+            if (target.parentElement) {
+              target.parentElement.classList.add('btn-contact', 'intern0');
+            }
+          }
+        });
+        clearInterval(interval);
+      }
+      if (tries >= maxTries) {
+        // Fallback: plain link button if API never becomes available
+        if (target && !target.nextElementSibling) {
+          var link = document.createElement('a');
+          link.href = url;
+          link.target = '_blank';
+          link.rel = 'noopener';
+          link.innerHTML = "<button class='intern'><span class='material-icons'>" + icon + "</span>" + label + "</button>";
+          if (target.parentElement) {
+            target.parentElement.classList.add('btn-contact', 'intern0');
+          }
+          target.insertAdjacentElement('afterend', link);
+        }
+        clearInterval(interval);
+      }
+    }, 100);
+  }
+
+  window.addEventListener('load', function() {
+    loadSchedulingButton('cal', 'https://cal.com/wbgrds/rueckruf', 'R&uuml;ckruftermin', 'edit_calendar');
+  });
+})();
+</script>
+<!-- end Google Calendar Appointment Scheduling -->
