@@ -656,7 +656,12 @@ main > div {
 }
 
 .contact-column p {
+    color: #73CAFF;
     gap: 1rem;
+}
+
+.contact-column p:first-child {
+    margin-top: 0;
 }
 
 .contact-info {
