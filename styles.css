@@ -22,8 +22,6 @@
 }
 
 
-
-
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
     background-color: var(--bg);
@@ -699,38 +697,6 @@ main > div {
     border-radius: 28px;
 }
 
-.qxCTlb {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: left;
-    gap: 0.75rem;
-    padding: 0.4rem 1rem !important;
-    margin: 15px 0 15px 0 !important;
-    color: #73CAFF !important;
-    text-decoration: none;
-    text-align: center;
-    width: 100%;
-    max-width: 230px;
-    border-radius: 28px !important;
-    background: rgba(115, 202, 255, 0.05) !important;
-    border: 1px solid rgba(115, 202, 255, 0.3) !important;
-    transition: all 0.3s;
-    font-size: 1.1rem;
-    font-weight: 500;
-    cursor: pointer;
-}
-
-.qxCTlb:hover {
-    background: rgba(115, 202, 255, 0.1) !important;
-    transform: translateY(-5px);
-}
-
-.qxCTlb i {
-    font-size: 1.5rem;
-    color: #73CAFF;
-}
-
 .button-icon {
     font-size: 1.5rem;
     color: #73CAFF;
@@ -847,24 +813,6 @@ footer p {
 @media (min-width: 1201px) {#wp-live-chat-by-3CX {right: calc((100vw - 1200px) / 2 + 8px);}}
 
 
-
-
-
-.qxCTlb{
-    display: inline-block;
-    padding: 14px 18px;
-    border: 1px solid rgba(255, 255, 255, 0.6);
-    border-radius: 8px;
-    font-family:Google Sans Text,Google Sans;
-    color: var(--text);
-    text-decoration: none;
-    font-weight: 600;
-    background: #00000080;
-    white-space:break-spaces;
-    cursor:pointer;
-}
-
-
 .hur54b{
 	position:fixed;
 	top:0;
@@ -910,18 +858,6 @@ footer p {
 	cursor:pointer;
 	background-color:rgb(60,64,67)
 }
-.L0Dvsd{
-	color:#fff;
-	font-size:18px;
-	margin-right:8px
-}
-.uE25ec{font-size:14px;
-	font-family:"Google Sans",Arial,sans-serif;
-	font-weight:500;
-	letter-spacing:.25px;
-	color:#fff
-}
-
 /* Modal Overlay */
 #contact-modal {
   display: none;
