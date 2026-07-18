@@ -897,8 +897,8 @@ footer p {
   overflow: hidden;
   width: 100%;
   max-width: 1200px;
-  height: 90vh;
-  max-height: 700px;
+  height: 100vh;
+  max-height: 100vh;
   display: flex;
   flex-direction: column;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
