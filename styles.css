@@ -672,6 +672,7 @@ main > div {
 
 .contact-info-column {
     align-items: flex-start !important;
+    gap: 2rem;
 }
 
 .contact-info a {
