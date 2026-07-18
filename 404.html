@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/assets/scheduling-button-script.css">
     <script src="/assets/scheduling-button-script.js"></script>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <script src="/assets/modal.js"></script>
 </head>
 <body>
     <header>
@@ -387,4 +388,15 @@ C(H(B(a.color)));b.style.backgroundColor=a.color;b.classList.add("qxCTlb");b.onc
 
 
 </body>
+
+<!-- Modal für Kalender und Maps -->
+<div id="contact-modal">
+  <div class="modal-content-wrapper">
+    <div class="modal-header">
+      <h2 id="modal-title">Termin</h2>
+      <button class="modal-close" onclick="closeModal()">×</button>
+    </div>
+    <iframe id="modal-content"></iframe>
+  </div>
+</div>
 </html>
