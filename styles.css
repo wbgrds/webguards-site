@@ -89,6 +89,11 @@ nav a {
 
 a {
     color: #73CAFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
 }
 
 nav a:hover {
@@ -583,9 +588,7 @@ a.team-card {
     color: inherit;
 }
 
-a.team-card:hover {
-    text-decoration: none;
-}
+
 
 .team-card {
     text-align: center;
