@@ -19,8 +19,8 @@
         setTimeout(() => {
           const button = target.nextElementSibling;
           if (button) {
-            button.innerHTML = "<span class='material-icons'>" + icon + "</span>" + label;
-            button.classList.add('intern');
+            button.innerHTML = "<span class='material-icons button-icon'>" + icon + "</span><span class='button-label'>" + label + "</span>";
+            button.classList.add('contact-button');
             button.removeAttribute('style');
             if (target.parentElement) {
               target.parentElement.classList.add('btn-contact', 'intern0');
@@ -36,7 +36,8 @@
           link.href = url;
           link.target = '_blank';
           link.rel = 'noopener';
-          link.innerHTML = "<button class='intern'><span class='material-icons'>" + icon + "</span>" + label + "</button>";
+          link.innerHTML = "<span class='material-icons button-icon'>" + icon + "</span><span class='button-label'>" + label + "</span>";
+          link.classList.add('contact-button');
           if (target.parentElement) {
             target.parentElement.classList.add('btn-contact', 'intern0');
           }
