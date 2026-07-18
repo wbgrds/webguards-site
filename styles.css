@@ -655,6 +655,10 @@ main > div {
     align-items: center;
 }
 
+.contact-column p {
+    gap: 1rem;
+}
+
 .contact-info {
     font-size: 1.1rem;
     line-height: 2;
