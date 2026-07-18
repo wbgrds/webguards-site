@@ -331,58 +331,58 @@ C(H(B(a.color)));b.style.backgroundColor=a.color;b.classList.add("qxCTlb");b.onc
     <!-- cal.com ende -->
 
 <!-- Google Calendar Appointment Scheduling begin -->
-<script>
-(function() {
-  function loadSchedulingButton(targetId, url, label, icon) {
-    var tries = 0;
-    var maxTries = 40; // ~4s total
-    var interval = setInterval(function() {
-      tries++;
-      var target = document.getElementById(targetId);
-      if (target && window.calendar && calendar.schedulingButton) {
-        calendar.schedulingButton.load({
-          url: url,
-          color: '#039BE5',
-          label: label,
-          target: target
-        });
-        setTimeout(() => {
-          const button = target.nextElementSibling;
-          if (button) {
-            button.innerHTML = "<span class='material-icons'>" + icon + "</span>" + label;
-            button.classList.add('intern');
-            button.removeAttribute('style');
-            if (target.parentElement) {
-              target.parentElement.classList.add('btn-contact', 'intern0');
+    <script>
+    (function() {
+      function loadSchedulingButton(targetId, url, label, icon) {
+        var tries = 0;
+        var maxTries = 40;
+        var interval = setInterval(function() {
+          tries++;
+          var target = document.getElementById(targetId);
+          if (target && window.calendar && calendar.schedulingButton) {
+            calendar.schedulingButton.load({
+              url: url,
+              color: "#039BE5",
+              label: label,
+              target: target
+            });
+            setTimeout(() => {
+              const button = target.nextElementSibling;
+              if (button) {
+                // Entferne Google-Klassen, behalte nur unser Styling
+                button.className = "contact-button";
+                button.removeAttribute('style');
+                button.innerHTML = "<span class='material-icons button-icon'>" + icon + "</span><span class='button-label'>" + label + "</span>";
+                if (target.parentElement) {
+                  target.parentElement.classList.add("btn-contact", "intern0");
+                }
+              }
+              clearInterval(interval);
+            }, 50);
+          }
+          if (tries >= maxTries) {
+            if (target && !target.nextElementSibling) {
+              var link = document.createElement("a");
+              link.href = url;
+              link.target = "_blank";
+              link.rel = "noopener";
+              link.innerHTML = "<span class='material-icons button-icon'>" + icon + "</span><span class='button-label'>" + label + "</span>";
+              link.classList.add("contact-button");
+              if (target.parentElement) {
+                target.parentElement.classList.add("btn-contact", "intern0");
+              }
+              target.insertAdjacentElement("afterend", link);
             }
+            clearInterval(interval);
           }
-        });
-        clearInterval(interval);
+        }, 100);
       }
-      if (tries >= maxTries) {
-        // Fallback: plain link button if API never becomes available
-        if (target && !target.nextElementSibling) {
-          var link = document.createElement('a');
-          link.href = url;
-          link.target = '_blank';
-          link.rel = 'noopener';
-          link.innerHTML = "<button class='intern'><span class='material-icons'>" + icon + "</span>" + label + "</button>";
-          if (target.parentElement) {
-            target.parentElement.classList.add('btn-contact', 'intern0');
-          }
-          target.insertAdjacentElement('afterend', link);
-        }
-        clearInterval(interval);
-      }
-    }, 100);
-  }
-
-  window.addEventListener('load', function() {
-    loadSchedulingButton('cal', 'https://cal.com/wbgrds/rueckruf', 'Rückruftermin', 'edit_calendar');
-    loadSchedulingButton('maps', 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2338.8394684630325!2d12.078469515941887!3d54.11204892478131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47ac51cd396e4261%3A0x38c11e5072bd6d77!2sWEBGUARDS%20Internet%20Service!5e0!3m2!1sde!2sde!4v1638797737726!5m2!1sde!2sde', 'Standort', 'location_on');
-  });
-})();
-</script>
+      window.addEventListener("load", function() {
+        loadSchedulingButton("cal", "https://cal.com/wbgrds/rueckruf", "Rückruftermin", "edit_calendar");
+        loadSchedulingButton("maps", "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2338.8394684630325!2d12.078469515941887!3d54.11204892478131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47ac51cd396e4261%3A0x38c11e5072bd6d77!2sWEBGUARDS%20Internet%20Service!5e0!3m2!1sde!2sde!4v1638797737726!5m2!1sde!2sde", "Standort", "location_on");
+      });
+    })();
+    </script>
 <!-- end Google Calendar Appointment Scheduling -->
 
 
