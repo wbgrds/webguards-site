@@ -4,41 +4,14 @@
     const iframe = document.getElementById('modal-content');
     
     if (type === 'calendar') {
-      iframe.src = 'https://cal.com/wbgrds/rueckruf';
-      
-      // Warte bis iframe geladen ist und injiziere CSS
-      iframe.onload = function() {
-        try {
-          const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
-          if (iframeDoc) {
-            // Verstecke Cal.com Branding/Footer
-            const style = iframeDoc.createElement('style');
-            style.textContent = `
-              /* Verstecke Cal.com Logo Footer */
-              .mb-6.mt-auto.pt-6 {
-                display: none !important;
-              }
-              /* Alternative: Falls Klasse anders heißt */
-              [href*="go.cal.com"] {
-                display: none !important;
-              }
-              /* Entferne auch den Parent wenn nötig */
-              span:has(> [href*="go.cal.com"]) {
-                display: none !important;
-              }
-            `;
-            iframeDoc.head.appendChild(style);
-          }
-        } catch (e) {
-          console.log('iframe CSS injection nicht möglich (CORS)');
-        }
-      };
+      // Öffne cal.com in neuem Tab statt in iframe
+      window.open('https://cal.com/wbgrds/rueckruf', '_blank');
+      return;
     } else if (type === 'maps') {
       iframe.src = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2338.8394684630325!2d12.078469515941887!3d54.11204892478131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47ac51cd396e4261%3A0x38c11e5072bd6d77!2sWEBGUARDS%20Internet%20Service!5e0!3m2!1sde!2sde!4v1638797737726!5m2!1sde!2sde';
+      modal.style.display = 'flex';
+      modal.focus();
     }
-    
-    modal.style.display = 'flex';
-    modal.focus();
   };
   
   window.closeModal = function() {
